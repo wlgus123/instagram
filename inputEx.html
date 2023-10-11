@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .i {
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="i input_button">
+        <div class="button_button">
+            <input type="button"/><br/>
+            <input type="button" value="버튼"/>
+        </div>
+        <div class="button_submit">
+            <input type="submit"/>
+            <input type="submit" value="버튼"/>
+        </div>
+    </div>
+    
+    <div class="i input_file">
+        <input type="file" accept="image/*"/><br/>
+        <input type="file" accept="audio/*"/><br/>
+        <input type="file" accept="video/*"/><br/>
+        <input type="file" accept=".jpg, .png, .pdf"/><br/>
+    </div>
+
+    <div class="i input_color">
+        <input type="color"/>
+        <input type="color" value="#ff0000"/>
+    </div>
+
+    <div class="i input_check_box">
+        <input type="checkbox"/>아침을 드셨나요?<br/>
+        <input type="checkbox"/>점심을 드셨나요?<br/>
+        <input type="checkbox"/>저녁을 드셨나요?<br/>
+    </div>
+
+    <div class="i input_radio">
+        <!--name의 역할: 원하는 선택지를 하나씩만 고를 수 있게 하기 위함-->
+        <div class="radio1">
+            <input type="radio" name="radio1" checked/>한식
+            <input type="radio" name="radio1"/>중식
+            <input type="radio" name="radio1"/>양식
+            <input type="radio" name="radio1"/>일식
+        </div>
+        <div class="radio2">
+            <input type="radio" name="radio2" checked/>뜨거운 것
+            <input type="radio" name="radio2"/>차가운 것
+        </div>
+        <div class="radio3">
+            <input type="radio" name="radio3" checked/> 매움
+            <input type="radio" name="radio3"/> 안 매움
+        </div>
+    </div>
+
+    <div class="i input_range">
+        <input type="range" min="0" max="1000"/>
+        <br/>
+        <input 
+        type="range" min="0" max="1000" 
+        step="10"/>
+        <br/>
+        <input 
+        type="range" min="0" max="1000" 
+        step="10" value="10"/>
+    </div>
+
+    <div class="i input_date">
+        <p>
+            <input type="date"/>
+        </p>
+        <p>
+            <input type="month"/>
+        </p>
+        <p>
+            <input type="week"/>
+        </p>
+        <p>
+            <input type="time"/>
+        </p>
+        <p>
+            <input type="datetime-local"/>
+        </p>
+    </div>
+</body>
+</html>
